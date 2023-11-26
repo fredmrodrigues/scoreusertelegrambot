@@ -20,9 +20,24 @@ Depois de finalizado a API, fazer um botzinho muito simples no telegram, pra faz
 ### Bibliotecas / Frameworks externas:
 * Python Telegram Bot
     > Version: 20.6
+    > Home-page: https://python-telegram-bot.org/
+    > License: LGPLv3
 
 * FastAPI (Version: 0.104.1)
+    > Version: 0.104.1
+    > Home-page: https://fastapi.tiangolo.com/
+    > License: MIT license
+
 * Uvicorn (Version: 0.24.0.post1)
+    > Version: 0.24.0.post1
+    > Home-page: https://www.uvicorn.org/
+    > License: BSD 3-Clause "New" or "Revised" License
 
 ### Base de dados:
 * SQLite3
+
+### FastAPI:
+[FastAPI](FASTAPI.md)
+
+### Telegram Bot:
+[Telegram_Bot](TELEGRAMBOT.md)
