@@ -18,8 +18,9 @@ Além do CRUD, deve ter uma, rota que me retorne os usuários que tem um score m
 Depois de finalizado a API, fazer um botzinho muito simples no telegram, pra fazer a conversação e fazer as chamadas pela API através dele
 
 ### Bibliotecas / Frameworks externas:
->* Python Telegram Bot
-> Version: 20.6
+* Python Telegram Bot
+** Version: 20.6
+
 * FastAPI (Version: 0.104.1)
 * Uvicorn (Version: 0.24.0.post1)
 
