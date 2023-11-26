@@ -88,4 +88,4 @@ async def ask_for_confirm_edit(update: Update, context: CallbackContext):
             await update.message.reply_text(f"Erro ao editar usuário: {str(e)}")
     else:
         await update.message.reply_text('Operação de edição cancelada.')
-    return START
+    return ConversationHandler.END
