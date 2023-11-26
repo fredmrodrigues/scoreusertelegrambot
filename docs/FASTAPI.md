@@ -9,8 +9,8 @@ Executa o copando para inserir um novo usuário:
 2. Alterar os valores padrão do _dict_;
 3. Clicar no botão "Execute";
 4. Validação de dados:
-* Caso os dados sejam válidos, a mensagem de "Usuário criado com sucesso!" será exibida no campo "Responses" e os dados do novo usuário serão armazenados no banco de dados.
-* Caso algum dos dados seja inválido, o campo "Response" irá apresentar uma mensagem com o(s) dado(s) inválido(s) e o novo usuário não será registrado no banco de dados.
+> * Caso os dados sejam válidos, a mensagem de "Usuário criado com sucesso!" será exibida no campo "Responses" e os dados do novo usuário serão armazenados no banco de dados.
+> * Caso algum dos dados seja inválido, o campo "Response" irá apresentar uma mensagem com o(s) dado(s) inválido(s) e o novo usuário não será registrado no banco de dados.
 ### add_users:
 Executa o copando para inserir vários usuários:
 1. Clicar no botão "Try it out";
