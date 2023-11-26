@@ -74,11 +74,3 @@ async def success_create(update: Update, context: CallbackContext):
     else:
         await update.message.reply_text("Erro de validação. Não foi possível cadastrar o usuário.")
         return ConversationHandler.END
-
-async def cancel(update: Update, context: CallbackContext):
-    user_id = update.message.from_user.id
-    # Limpa os dados do usuário
-    user_data.pop(user_id, None)
-
-    await update.message.reply_text("Conversa cancelada.")
-    return ConversationHandler.END

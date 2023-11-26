@@ -40,6 +40,9 @@ async def get_user_score(update: Update, context: CallbackContext):
             if not users_data:
                 await update.message.reply_text(f"Nenhum usuário encontrado com score maior ou igual a {X}")
             else:
+                #
+                await update.message.reply_text(f"Usuários com score maior ou igual a {X}: ")
+                #
                 users_list = []
                 for user_data in users_data:
                     user_info = {
@@ -49,7 +52,8 @@ async def get_user_score(update: Update, context: CallbackContext):
                         "score": user_data[3]
                     }
                     users_list.append(user_info)
-                await update.message.reply_text(f"Usuários com score maior ou igual a {X}: {users_list}")
+                    await update.message.reply_text(f"{user_info}")  # imprime cada um em 1 mensagem
+                # await update.message.reply_text(f"Usuários com score maior ou igual a {X}: {users_list}")
         else:
             await update.message.reply_text("Por favor, digite um valor válido para o score (inteiro).")
     except Exception as e:
@@ -68,6 +72,9 @@ async def show_top_users(update: Update, context: CallbackContext):
         if not users_data:
             await update.message.reply_text("Nenhum usuário encontrado.")
         else:
+            #
+            await update.message.reply_text(f"Os 50 usuários com maiores scores: ")
+            #
             users_list = []
             for user_data in users_data:
                 user_info = {
@@ -77,7 +84,8 @@ async def show_top_users(update: Update, context: CallbackContext):
                     "score": user_data[3]
                 }
                 users_list.append(user_info)
-            await update.message.reply_text(f"Os 50 usuários com maiores scores: {users_list}")
+                await update.message.reply_text(f"{user_info}")  # imprime cada um em 1 mensagem
+            # await update.message.reply_text(f"Os 50 usuários com maiores scores: {users_list}")
     except Exception as e:
         await update.message.reply_text(f"Erro ao obter usuários: {str(e)}")
     return ConversationHandler.END

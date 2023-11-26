@@ -26,8 +26,16 @@ Clique em um comando:
 /delete: Deletar um usuário;""")
 
 async def unknown(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await context.bot.send_message(chat_id=update.effective_chat.id, text="Desculpe, *não* reconheço esse comando.")
+    await context.bot.send_message(chat_id=update.effective_chat.id, text="Desculpe, não reconheço esse comando.")
  
+async def cancel(update: Update, context: CallbackContext):
+    user_id = update.message.from_user.id
+    # Limpa os dados do usuário
+    user_data.pop(user_id, None)
+
+    await update.message.reply_text("Conversa cancelada.")
+    return ConversationHandler.END
+
 if __name__ == '__main__':   
     application = ApplicationBuilder().token(TOKEN).build()
 

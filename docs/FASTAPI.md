@@ -4,7 +4,7 @@ Após executar o programa principal, basta acessar a url [FastAPI_URL](http://12
 
 ## Create
 ### create_user:
-Executa o copando para inserir um novo usuário:
+Executa o comando para inserir um novo usuário:
 1. Clicar no botão "Try it out";
 2. Alterar os valores padrão do _dict_;
 3. Clicar no botão "Execute";
@@ -12,7 +12,7 @@ Executa o copando para inserir um novo usuário:
     * Caso os dados sejam válidos, a mensagem de "Usuário criado com sucesso!" será exibida no campo "Responses" e os dados do novo usuário serão armazenados no banco de dados.
     * Caso algum dos dados seja inválido, o campo "Response" irá apresentar uma mensagem com o(s) dado(s) inválido(s) e o novo usuário não será registrado no banco de dados.
 ### add_users:
-Executa o copando para inserir vários usuários:
+Executa o comando para inserir vários usuários:
 1. Clicar no botão "Try it out";
 2. Alterar os valores padrão da _list_ inserindo vários _dict_ com os dados dos novos usuários;
 3. Clicar no botão "Execute";
