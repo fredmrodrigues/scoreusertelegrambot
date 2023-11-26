@@ -37,7 +37,7 @@ Depois de finalizado a API, fazer um botzinho muito simples no telegram, pra faz
 * SQLite3
 
 ### FastAPI:
-[FastAPI](FASTAPI.md)
+[FastAPI](/docs/FASTAPI.md)
 
 ### Telegram Bot:
-[Telegram_Bot](TELEGRAMBOT.md)
+[Telegram_Bot](/docs/TELEGRAMBOT.md)
